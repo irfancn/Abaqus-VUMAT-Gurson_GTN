@@ -348,7 +348,7 @@ C============================== Porosity ===============================
       if (fs .le. fc) then
         f = fs
       else
-        f = fc + 1.d0/(q1 - fc)*(fs - fc)/(ff - fc)
+        f = fc + (1.d0/q1 - fc)*(fs - fc)/(ff - fc)
       end if 
       if (f .gt. ff) f = ff
       end subroutine
